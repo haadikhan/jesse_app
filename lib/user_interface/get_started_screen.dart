@@ -78,16 +78,13 @@ class GetStartedButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
-              decoration: BoxDecoration(
-                color: Colors.grey[800],
-              ),
-              child: Text(
-                'GET STARTED',
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-              ),
-            ),
+                padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+                decoration: BoxDecoration(
+                  color: Colors.grey[800],
+                ),
+                child: Text('GET STARTED',
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold))),
           ],
         ),
       ),

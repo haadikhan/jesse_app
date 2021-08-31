@@ -1,8 +1,6 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:jesse_app/signup_screen.dart';
-
+import 'package:jesse_app/welcome_screen.dart';
 import 'package:jesse_app/user_interface/routing_tabs.dart';
 
 class PaymentScreen extends StatefulWidget {
@@ -18,7 +16,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
           leading: InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => (SignupScreen())));
+                  MaterialPageRoute(builder: (context) => (WelcomeScreen())));
             },
             child: Icon(
               Icons.arrow_back,

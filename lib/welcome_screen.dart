@@ -40,11 +40,11 @@ class _HomePageState extends State<WelcomeScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Greetings(),
+              GreetingsText(),
               RegisterButton(),
               OrText(),
-              SignUpWithPhone(),
-              SignUpWithGoogle(),
+              SignUpWithPhoneButton(),
+              SignUpWithGoogleButton(),
             ],
           ),
         ),
@@ -53,7 +53,7 @@ class _HomePageState extends State<WelcomeScreen> {
   }
 }
 
-class Greetings extends StatelessWidget {
+class GreetingsText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -113,7 +113,7 @@ class OrText extends StatelessWidget {
   }
 }
 
-class SignUpWithPhone extends StatelessWidget {
+class SignUpWithPhoneButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -143,7 +143,7 @@ class SignUpWithPhone extends StatelessWidget {
   }
 }
 
-class SignUpWithGoogle extends StatelessWidget {
+class SignUpWithGoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
