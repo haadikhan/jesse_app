@@ -1,6 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:jesse_app/application.dart/payment_screen_bloc/payment_screen_event.dart';
-import 'package:jesse_app/application.dart/payment_screen_state.dart';
+
+import 'package:jesse_app/application/payment_screen_bloc/payment_screen_event.dart';
+import 'package:jesse_app/application/payment_screen_state.dart';
 
 class PaymentScreenBloc extends Bloc<PaymentScreenEvent, PaymentScreenState> {
   PaymentScreenBloc()

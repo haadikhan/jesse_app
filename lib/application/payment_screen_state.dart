@@ -1,9 +1,9 @@
 class PaymentScreenState {
-  String email;
-  String phoneNo;
-  String cardNo;
-  String expiryDate;
-  String cvvNumber;
+  final String email;
+  final String phoneNo;
+  final String cardNo;
+  final String expiryDate;
+  final String cvvNumber;
   PaymentScreenState(
       {required this.email,
       required this.phoneNo,
