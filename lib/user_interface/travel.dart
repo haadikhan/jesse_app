@@ -70,8 +70,12 @@ Widget _containerForTraveling(String date, String countryName, String url) {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Text(date.toString()),
-        Text(countryName.toString()),
+        Text(
+          date.toString(),
+        ),
+        Text(
+          countryName.toString(),
+        ),
       ],
     ),
   );

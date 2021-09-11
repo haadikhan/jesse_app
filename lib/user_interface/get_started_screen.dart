@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:jesse_app/welcome_screen.dart';
+import 'package:jesse_app/user_interface/welcome_screen.dart';
 
 class GetStartedScreen extends StatefulWidget {
   @override
@@ -71,20 +71,27 @@ class GetStartedButton extends StatelessWidget {
     return Center(
       child: InkWell(
         onTap: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => WelcomeScreen()));
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => WelcomeScreen(),
+            ),
+          );
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Container(
-                padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
-                decoration: BoxDecoration(
-                  color: Colors.grey[800],
-                ),
-                child: Text('GET STARTED',
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold))),
+              padding: EdgeInsets.symmetric(horizontal: 100, vertical: 20),
+              decoration: BoxDecoration(
+                color: Colors.grey[800],
+              ),
+              child: Text(
+                'GET STARTED',
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
+            ),
           ],
         ),
       ),

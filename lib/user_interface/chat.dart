@@ -97,7 +97,11 @@ class MessageListTile extends StatelessWidget {
     return ListTile(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => OpenChatScreen()));
+          context,
+          MaterialPageRoute(
+            builder: (context) => OpenChatScreen(),
+          ),
+        );
       },
       leading: CircleAvatar(
         backgroundImage: NetworkImage(

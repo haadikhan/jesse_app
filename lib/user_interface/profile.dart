@@ -28,10 +28,16 @@ class _ProfileState extends State<Profile> {
                 fit: BoxFit.cover)),
         child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-            child: ListView(
+            child: Column(
               children: [
-                ProfilePictureAndName(),
-                ProfileDetails(),
+                Expanded(
+                  child: ListView(
+                    children: [
+                      ProfilePictureAndName(),
+                      ProfileDetails(),
+                    ],
+                  ),
+                ),
                 LogoutButton(),
               ],
             )),
@@ -88,16 +94,24 @@ class LogoutButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => RoutingTabs()));
+          context,
+          MaterialPageRoute(
+            builder: (context) => RoutingTabs(),
+          ),
+        );
       },
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 125, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: 55, vertical: 15),
+        margin: EdgeInsets.symmetric(horizontal: 60),
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
           color: Colors.grey[700],
         ),
-        child: Text(
-          'Log out',
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        child: Center(
+          child: Text(
+            'Log out',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );

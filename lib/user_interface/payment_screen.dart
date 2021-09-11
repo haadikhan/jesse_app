@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:jesse_app/welcome_screen.dart';
+import 'package:jesse_app/user_interface/welcome_screen.dart';
 import 'package:jesse_app/user_interface/routing_tabs.dart';
 
 class PaymentScreen extends StatefulWidget {
@@ -178,7 +178,11 @@ class PayButton extends StatelessWidget {
       child: InkWell(
         onTap: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => RoutingTabs()));
+            context,
+            MaterialPageRoute(
+              builder: (context) => RoutingTabs(),
+            ),
+          );
         },
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 125, vertical: 20),
